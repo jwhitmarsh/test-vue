@@ -1,12 +1,8 @@
 {
   "defaultSeverity": "warning",
-  "extends": [
-    "tslint:recommended"
-  ],
+  "extends": ["tslint:latest", "tslint-microsoft-contrib/recommended"],
   "linterOptions": {
-    "exclude": [
-      "node_modules/**"
-    ]
+    "exclude": ["node_modules/**"]
   },
   "rules": {
     "quotemark": [true, "single"],
@@ -14,6 +10,37 @@
     "interface-name": false,
     "ordered-imports": false,
     "object-literal-sort-keys": false,
-    "no-consecutive-blank-lines": false
+    "no-consecutive-blank-lines": false,
+    "max-line-length": [
+      true,
+      {
+        "ignore-pattern": "'(.*?)'"
+      }
+    ],
+    "arrow-parens": false,
+    "no-default-import": false,
+    "match-default-export-name": false,
+    "no-implicit-dependencies": [true, ["@"]],
+    "completed-docs": false,
+    "newline-per-chained-call": false,
+    "typedef": false,
+    "strict-boolean-expressions": false,
+    "no-unsafe-any": false,
+    "member-ordering": false,
+    "no-default-export": false,
+    "no-any": false,
+    "no-submodule-imports": false,
+    "no-this-assignment": false,
+    "member-access": false,
+    "trailing-comma": [true, "always"],
+    "no-relative-imports": [true, "allow-siblings"],
+    "prefer-type-cast": false,
+    "import-name": false,
+    "export-name": false,
+    "prefer-array-literal": false,
+    "no-suspicious-comment": false,
+    "no-inner-html": false,
+    "no-single-line-block-comment": false,
+    "no-backbone-get-set-outside-model": false
   }
 }
